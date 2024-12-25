@@ -1,10 +1,10 @@
 frontend:
-    path: ./
-    publish: ""
+    path: ./                   # Path to your static files (root directory in this case)
+    publish: ""                # Leave empty for static sites
     scripts:
-        build: ""
-        deploy: ""
-    subdomain: info-sphere
+        build: ""              # No build script needed for static HTML
+        deploy: ""             # No deploy script needed for static HTML
+    subdomain: info-sphere      # Custom subdomain for your site
 name: info-sphere
-region: us-east-1
-yamlVersion: 2
+region: us-east-1              # Deployment region
+yamlVersion: 2                 # YAML version
