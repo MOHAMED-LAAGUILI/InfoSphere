@@ -13,7 +13,7 @@ body {
   }
   h1 {
     text-align: center;
-    color: #4a4a4a;
+    color: #009148;
     margin-bottom: 30px;
   }
   .info-container {
@@ -85,19 +85,50 @@ body {
   }
   
   /* Install button styles */
-  .install-btn {
+ /* Custom Button Style */
+ #installBtn {
     display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #38a169;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    z-index: 99; /* Ensure it stays below the theme toggle button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
-  .install-btn:hover {
-    transform: scale(1.1);
+
+  #installBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+
+  #installBtn:active {
+    transform: scale(1);
+  }
+
+  /* Button container style */
+  .install-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+   /* Footer styling */
+   footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
   }
   
